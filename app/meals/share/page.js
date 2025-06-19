@@ -1,7 +1,7 @@
 '"use client";';
 import classes from "./page.module.css";
 import ImagePicker from "@/components/meals/image-picker";
-import { shareMeal } from "@/lib/actions";
+import shareMeal from "@/lib/actions";
 export default function ShareMealPage() {
   return (
     <>
