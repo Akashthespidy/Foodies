@@ -13,7 +13,9 @@
     "next": "^15.3.3",
     "react": "^18",
     "react-dom": "^18",
-    "webpack": "^5.99.9"
+    "slugify": "^1.6.6",
+    "webpack": "^5.99.9",
+    "xss": "^1.0.15"
   },
   "devDependencies": {
     "eslint": "^8",
