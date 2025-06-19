@@ -2,10 +2,12 @@
 import classes from "./page.module.css";
 import ImagePicker from "@/components/meals/image-picker";
 import MealsFormSubmit from "@/components/meals/meals-form-submit";
-import shareMeal from "@/lib/actions";
-import { useActionState } from "react";
+import { shareMeal } from "@/lib/actions";
+import { useFormState } from "react-dom";
+
 export default function ShareMealPage() {
-  const [state, formAction] = useActionState(shareMeal, { message: null });
+  const [state, formAction] = useFormState(shareMeal, { message: null });
+
   return (
     <>
       <header className={classes.header}>
