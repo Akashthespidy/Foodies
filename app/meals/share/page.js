@@ -1,9 +1,10 @@
 "use client";
+export const dynamic = "force-dynamic";
 import classes from "./page.module.css";
 import ImagePicker from "@/components/meals/image-picker";
 import MealsFormSubmit from "@/components/meals/meals-form-submit";
 import { shareMeal } from "@/lib/actions";
-import { useFormState } from "react-dom";
+import { useFormState, useFormStatus } from "react-dom"; // ✅ correct import
 
 export default function ShareMealPage() {
   const [state, formAction] = useFormState(shareMeal, { message: null });
